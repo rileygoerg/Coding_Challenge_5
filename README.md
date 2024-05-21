@@ -1,1 +1,3 @@
 # Coding_Challenge_5
+## U14123683 Riley Goerg
+The purpose of this coding challenge was to create employee classes with name and salary properties. A function was created to calculate the total annual salary from the inputted monthly salary. A manager subclass was then created, where a 15% bonus was applied to the total annual salary. The monthly salary, bonus, and annual salary were logged for 2 manager objects from the dataset provided.
