@@ -25,6 +25,7 @@ class Manager extends Employee{
         console.log("Total Annual Salary (including bonus) for", this.name, ": $", totalSalary); // Logging total salary
     }
 }
+// Part 3: Adding manager objects from data set
 const manager1 = new Manager("Bob Ross", 6600, "Digital Marketing"); // Adding Bob Ross data
 manager1.calcAnnualSalary();
 const manager2 = new Manager("Debbie Little", 7205, "Finance"); // Adding Debbie Little data
