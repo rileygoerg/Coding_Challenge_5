@@ -1,3 +1,4 @@
+// U14123683 Riley Goerg
 // Part 1: Creating Employee Class
 class Employee{
     constructor(name, salary){ // Adding name and salary properties
