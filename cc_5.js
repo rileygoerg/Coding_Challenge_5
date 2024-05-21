@@ -3,7 +3,7 @@ class Employee{
     constructor(name, salary){ // Adding name and salary properties
     this.name = name;
     this.salary = salary;
-    console.log(this.name, "has a base monthly salary of $", this.salary, "."); // Logs a message with the name and monthly salary
+    console.log(this.name, "has a base monthly salary of $", this.salary); // Logs a message with the name and monthly salary
     }
     calcAnnualSalary(){ // Function to find annual salary
         return this.salary * 12; // Annual salary = monthly salary * 12
@@ -20,8 +20,11 @@ class Manager extends Employee{
         const baseSalary = super.calcAnnualSalary(); // Inheriting base salary calculation
         const bonus = 0.15 * baseSalary; // Calculating bonus
         const totalSalary = baseSalary + bonus; // Calculating total salary with bonus
-        console.log(this.name, "is a manager, so they receive a 15% bonus. The bonus is: $", bonus); // Logging bonus
-        console.log("Total Annual Salary (including bonus): $", totalSalary); // Logging total salary
+        console.log(this.name, "works in the", this.department, "department and is a manager, so they receive a 15% bonus. The bonus is: $", bonus); // Logging bonus
+        console.log("Total Annual Salary (including bonus) for", this.name, ": $", totalSalary); // Logging total salary
     }
 }
-
+const manager1 = new Manager("Bob Ross", 6600, "Digital Marketing"); // Adding Bob Ross data
+manager1.calcAnnualSalary();
+const manager2 = new Manager("Debbie Little", 7205, "Finance"); // Adding Debbie Little data
+manager2.calcAnnualSalary();
